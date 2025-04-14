@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Dashboard</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f3f4f6;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 90%;
+      margin: auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .buttons {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      background: #3498db;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 5px;
+    }
+
+      button:hover {
+        background: #2980b9;
+      }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 30px;
+    }
+
+    table, th, td {
+      border: 1px solid #ccc;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    .form-section {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      margin-bottom: 30px;
+    }
+
+      .form-section input {
+        width: 100%;
+        padding: 8px;
+        margin: 5px 0 10px;
+      }
+
+      .form-section label {
+        font-weight: bold;
+      }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Product Dashboard</h1>
+
+    <div class="buttons">
+      <button>Show All Products</button>
+      <button>Show Product By ID</button>
+      <button>Add New Product</button>
+      <button>Edit Product</button>
+      <button>Delete Product</button>
+    </div>
+
+    <div class="form-section">
+      <h3>Add Product</h3>
+      <label>Name:</label>
+      <input type="text">
+      <label>Description:</label>
+      <input type="text">
+      <button>Add Product</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Example Product</td>
+          <td>Product description here</td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+
+</body>
+</html>
